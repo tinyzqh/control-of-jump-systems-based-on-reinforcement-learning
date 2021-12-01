@@ -10,48 +10,8 @@ import seaborn as sns
 from parameter import args
 from servo_system import ServoSystem
 import matplotlib.pyplot as plt
-
-
-def trapezoidal_function(time, args):
-    """
-    Get the value of the trace curve at the time moment.
-    Total simulation time is 0.5s.
-    :param time:
-    :return:
-    """
-    height = args.height
-    if time <= 0.075:
-        return (height / 0.075) * time
-    elif 0.075 < time and time <= 0.375:
-        return height
-    elif 0.375 < time and time <= 0.45:
-        return (-height / 0.075) * time + 6 * height
-    elif 0.45 < time and time <= 0.5:
-        return 0
-
-class PID(object):
-    def __init__(self, kp, ki, kd, args):
-        super(PID).__init__()
-        self.kp = kp
-        self.ki = ki
-        self.kd = kd
-        self.dt = args.dt
-
-        self.CumulativeError = 0.0
-        self.LastError = None
-
-    def update(self, error):
-        p = self.kp * error
-        i = self.ki * self.CumulativeError * self.dt
-        if self.LastError is None:
-            d = 0.0
-        else:
-            d = self.kd * (error - self.LastError) / self.dt
-
-        self.CumulativeError += error
-        self.LastError = error
-        return p + i + d
-
+from PID import PID
+from utils import trapezoidal_function
 
 def main(args, times):
 
@@ -59,7 +19,7 @@ def main(args, times):
     iaeValues = []
     ecValues = []
 
-    pid = PID(kp=0.5, ki=2.985, kd=0.0, args=args)  # Instance PID Control System.
+    pid = PID(kp=args.kp, ki=args.ki, kd=args.kd, args=args)  # Instance PID Control System.
     servo_system = ServoSystem()  # Instance Servo System.
 
     for sim_time in times:
