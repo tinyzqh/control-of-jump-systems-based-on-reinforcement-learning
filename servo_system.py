@@ -2,7 +2,7 @@
 # @Time    : 11/29/21 9:47 PM
 # @Author  : Zhiqiang He
 # @Email   : tinyzqh@163.com
-# @File    : servo_system_env.py
+# @File    : servo_system.py
 # @Software: PyCharm
 
 from parameter import args
