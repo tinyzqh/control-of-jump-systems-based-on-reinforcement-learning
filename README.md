@@ -22,9 +22,9 @@ python plot_result.py --choose_model class_pid --curve_type trapezoidal --height
 
 <div align=center>
     <span class='gp-n'>
-        <img src='https://github.com/tinyzqh/Kagebunsin-no-jyutu/blob/master/figures/acrobots-swingupFigure_1.png' width="250" alt="多尺度acrobots-swingup"/>
-        <img src='https://github.com/tinyzqh/Kagebunsin-no-jyutu/blob/master/figures/cartpole-balanceFigure_1.png' width="250" alt="多尺度cartpole-balance"/>
-        <img src='https://github.com/tinyzqh/Kagebunsin-no-jyutu/blob/master/figures/hopper-hopFigure_1.png' width="250" alt="多尺度hopper-hop"/>
+        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/ecValues.png' width="250" alt="ecValues"/>
+        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/iaeValues.png' width="250" alt="iaeValues"/>
+        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/radValues.png' width="250" alt="radValues"/>
     </span>
 </div>
 
