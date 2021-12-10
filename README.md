@@ -74,3 +74,24 @@ the result show:
     </span>
 </div>
 
+
+# Dependencies
+
+The code was tested under Ubuntu 16 and uses these packages:
+
+- tensorflow-gpu==1.14.0
+- atari-py==0.2.6
+- gym==0.17.3
+- numpy==1.91.3
+
+more packages described in requirements.txt
+
+
+Citing
+------
+If you find this open source release useful, please reference in your paper:
+
+
+> Chen P, He Z, Chen C, et al. (2018).
+> Control strategy of speed servo systems based on deep reinforcement learning[J].
+> *Algorithms, 2018, 11(5): 65.*.
