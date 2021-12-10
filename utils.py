@@ -5,8 +5,9 @@
 # @File    : utils.py
 # @Software: PyCharm
 
+from parameter import args
 
-def trapezoidal_function(time, args):
+def trapezoidal_function(time):
     """
     Get the value of the trace curve at the time moment.
     Total simulation time is 0.5s.

@@ -33,8 +33,36 @@ python plot_result.py --choose_model class_pid --curve_type trapezoidal --height
 
 Search the parameter of PID Based DDPG Algorithm.
 
+```bash
+python run.py --choose_model search_pid_parameter --curve_type trapezoidal --height 1000 --run_type train
+```
 
 
+# Electric Current Compensation Of RL-PID
 
-# Electric Current Compensation Of PID
+
+```bash
+python run.py --choose_model search_electric --curve_type trapezoidal --height 1000 --run_type train
+```
+
+test
+
+
+```bash
+python run.py --choose_model search_electric --curve_type trapezoidal --height 1000 --run_type test
+```
+
+Plot the result:
+
+```bash
+python plot_result.py --choose_model search_electric --curve_type trapezoidal --height 1000 --run_type train
+```
+
+the result show:
+
+<div align=center>
+    <span class='gp-n'>
+        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_search_electric_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_train/epRewards.png' width="500" alt="epRewards"/>
+    </span>
+</div>
 

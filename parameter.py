@@ -47,13 +47,8 @@ parser.add_argument("--state_dim", type=int, default=6, help="the state dim")
 parser.add_argument("--pid_parameter_search_action_dim", type=int, default=2, help="the action dim of PID Parameters Adjustment")
 parser.add_argument("--electric_compensation_action_dim", type=int, default=1, help="the action dim of electric compensation.")
 
-
 parser.add_argument("--ep_reward_max", type=int, default=1000000, help="the ")
-
 parser.add_argument("--run_type", type=str, default="train", help="choose from ['train', 'test']")
-
-
 parser.add_argument("--choose_model", type=str, default='search_electric', help="one of ['search_pid_parameter', 'search_electric', 'class_pid']")
-
 
 args = parser.parse_args()
