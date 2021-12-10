@@ -38,6 +38,13 @@ python run.py --choose_model search_pid_parameter --curve_type trapezoidal --hei
 ```
 
 
+<div align=center>
+    <span class='gp-n'>
+        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_search_electric_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_train/epRewards.png' width="500" alt="epRewards_fig"/>
+    </span>
+</div>
+
+
 # Electric Current Compensation Of RL-PID
 
 
