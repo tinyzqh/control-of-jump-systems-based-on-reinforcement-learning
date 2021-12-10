@@ -1,6 +1,8 @@
 
 # Introduce
 
+强化学习用于PID的参数整定和电流补偿控制。
+
 This is the implementation of the paper “Control Strategy of Speed Servo Systems Based on Deep Reinforcement Learning”.
 
 For more paper information, please checkout the the paper [Link](https://www.mdpi.com/1999-4893/11/5/65).
