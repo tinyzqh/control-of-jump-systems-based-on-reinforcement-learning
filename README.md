@@ -1,7 +1,7 @@
 
-# Introduce
+# *强化学习用于PID的参数整定和电流补偿控制。*
 
-强化学习用于PID的参数整定和电流补偿控制。
+# Introduce
 
 This is the implementation of the paper “Control Strategy of Speed Servo Systems Based on Deep Reinforcement Learning”.
 
