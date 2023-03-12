@@ -10,7 +10,7 @@ import os
 import tensorflow as tf
 import numpy as np
 from parameter import args
-from servo_system_env import ServoSystemEnv
+from src.env.servo_system_env import ServoSystemEnv
 from utils import trapezoidal_function
 
 with tf.name_scope("S"):
