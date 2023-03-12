@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Time    : 11/30/21 3:17 PM
-# @Author  : Zhiqiang He
-# @Email   : tinyzqh@163.com
-# @File    : PID.py
-# @Software: PyCharm
-
-
 class PID(object):
     def __init__(self, kp, ki, kd, args):
         super(PID).__init__()
@@ -14,8 +6,8 @@ class PID(object):
         self.kd = kd
         self.dt = args.dt
 
-        self.CumulativeError = 0.0
-        self.LastError = None
+        self.cumulative_error = 0.0
+        self.last_error = None
 
     def update(self, error):
         """
@@ -24,14 +16,14 @@ class PID(object):
         :return:
         """
         p = self.kp * error
-        i = self.ki * self.CumulativeError * self.dt
-        if self.LastError is None:
+        i = self.ki * self.cumulative_error * self.dt
+        if self.last_error is None:
             d = 0.0
         else:
-            d = self.kd * (error - self.LastError) / self.dt
+            d = self.kd * (error - self.last_error) / self.dt
 
-        self.CumulativeError += error
-        self.LastError = error
+        self.cumulative_error += error
+        self.last_error = error
         return p + i + d
 
     def update_with_parameter(self, error, kp, ki, kd):
@@ -44,15 +36,13 @@ class PID(object):
         :return:
         """
         p = kp * error
-        i = ki * self.CumulativeError * self.dt
-        if self.LastError is None:
+        i = ki * self.cumulative_error * self.dt
+        if self.last_error is None:
             d = 0.0
         else:
-            d = kd * (error - self.LastError) / self.dt
+            d = kd * (error - self.last_error) / self.dt
 
-        self.CumulativeError += error
-        self.LastError = error
+        self.cumulative_error += error
+        self.last_error = error
         return p + i + d
 
-if __name__ == "__main__":
-    pass

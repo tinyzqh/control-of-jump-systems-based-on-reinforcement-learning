@@ -1,11 +1,5 @@
-# -*- coding: utf-8 -*-
-# @Time    : 11/30/21 3:21 PM
-# @Author  : Zhiqiang He
-# @Email   : tinyzqh@163.com
-# @File    : utils.py
-# @Software: PyCharm
-
 from parameter import args
+
 
 def trapezoidal_function(time):
     """
@@ -23,6 +17,3 @@ def trapezoidal_function(time):
         return (-height / 0.075) * time + 6 * height
     elif 0.45 < time and time <= 0.5:
         return 0
-
-if __name__ == "__main__":
-    pass
